@@ -3,19 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jonathan Anselmo</title>
+<title>Jonathan Anselmo | Legado J</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 <style>
- body{background:#0a0a0a;color:white;font-family:Arial;text-align:center;padding:20px}
- .foto{width:150px;height:150px;border-radius:50%;border:3px solid #ffcc00}
- .btn{display:block;padding:14px;margin:12px auto;max-width:280px;border-radius:10px;text-decoration:none;font-weight:bold}
- .btn1{background:white;color:black} .btn2{background:#25D366;color:white}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#0a0a0a;color:white;font-family:'Inter',sans-serif;text-align:center;padding:30px 20px;animation:fadeIn 0.8s ease;}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+  .foto{width:145px;height:145px;border-radius:50%;border:3px solid #ffcc00;object-fit:cover;box-shadow:0 0 20px rgba(255,204,0,0.2)}
+  h1{margin:18px 0 6px 0;font-size:27px;font-weight:700}
+  .sub{color:#aaa;font-size:14px;max-width:300px;margin:0 auto 18px auto;line-height:1.4}
+  .tags{margin-bottom:25px}
+  .tags span{background:#1a1a1a;border:1px solid #2a2a2a;padding:6px 12px;border-radius:20px;font-size:11px;margin:3px;display:inline-block;color:#ccc}
+  .botoes{display:flex;flex-direction:column;gap:12px;max-width:320px;margin:0 auto}
+  .btn{padding:15px;border-radius:12px;text-decoration:none;font-weight:700;font-size:14px;display:block;transition:0.2s}
+  .btn:hover{transform:scale(1.03)}
+  .btn-projeto{background:white;color:black}
+  .btn-whats{background:#25D366;color:white}
+  footer{margin-top:45px;font-size:11px;color:#555}
 </style>
 </head>
 <body>
-<img class="foto" src="IMG-20260929-WA7475.jpg">
+<img class="foto" src="IMG-20260929-WA7475.jpg" alt="Jonathan">
 <h1>Fala, eu sou o Jonathan! 👊</h1>
-<p>De Guaíba, RS - Dia 2 do Legado J</p>
-<a class="btn btn1" href="projetos.html">Ver Meus Projetos</a>
-<a class="btn btn2" href="https://wa.me/5551998114142">Falar no WhatsApp</a>
+<p class="sub">De Guaíba, RS. Construindo meu legado na programação, um projeto por dia.</p>
+<div class="tags"><span>HTML</span><span>CSS</span><span>Legado J</span></div>
+<div class="botoes">
+  <a class="btn btn-projeto" href="projetos.html">Ver Meus Projetos →</a>
+  <a class="btn btn-whats" href="https://wa.me/SEU_NUMERO_AQUI">Falar no WhatsApp</a>
+</div>
+<footer>© 2026 Legado J • Guaíba - RS</footer>
 </body>
 </html>
